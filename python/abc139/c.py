@@ -1,12 +1,15 @@
 import sys
 
 # -----------------------------------------
-import os
-fdr = os.open('python/abc139/sample.txt', os.O_RDONLY)
-os.dup2(fdr, sys.stdin.fileno())
+# import os
+# fdr = os.open('python/abc139/sample.txt', os.O_RDONLY)
+# os.dup2(fdr, sys.stdin.fileno())
 # -----------------------------------------
 
+# print(fdr)
+
 str = sys.stdin.readlines()
+# str = os.read()
 
 N = int(str[0])
 Hs = str[1].split()
